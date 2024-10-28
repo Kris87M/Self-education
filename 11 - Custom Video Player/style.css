@@ -86,6 +86,16 @@ body {
   flex: 1;
 }
 
+.player:fullscreen .player__controls,
+.player:-webkit-full-screen .player__controls {
+  transform: translateY(0);
+}
+
+.player:fullscreen .progress,
+.player:-webkit-full-screen .progress {
+  height: 15px;
+}
+
 .progress {
   flex: 10;
   position: relative;
@@ -101,7 +111,7 @@ body {
   width: 50%;
   background: #ffc600;
   flex: 0;
-  flex-basis: 50%;
+  flex-basis: 0%;
 }
 
 /* unholy css to style input type="range" */
